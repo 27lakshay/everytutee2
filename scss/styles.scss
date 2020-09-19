@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+$color: rgba(11, 44, 79, 1);
+$color2: rgba(242, 200, 75, 1);
+$color3: rgba(246, 240, 219, 1);
+$color4: rgba(242, 239, 233, 1);
+$bgoverlaycolor: rgba(108, 99, 255, 0.2);
+$fontcolorauthorname: rgba(11, 44, 79, 0.45);
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins";
+    text-decoration: none;
+}
+
+* {
+    outline: 1px solid red;
+}
+
+.fixed-top.scrolled {
+    background-color: rgba(112, 112, 112, 0.9) !important;
+    transition: background-color 200ms linear;
+    opacity: 1;
+}
+.navbar {
+    width: auto;
+    height: 70px;
+    box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.5);
+    background: rgba(246, 240, 219, 0.1);
+    max-width: 100%;
+    .navbar-brand #brandtext {
+        display: none;
+    }
+    .navbar-brand {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 19vw;
+        #brandtext {
+            color: $color !important;
+            font: normal normal 900 3.2rem/48px Poppins;
+        }
+    }
+    .nav-link {
+        text-align: center;
+        font: normal normal 600 1.8rem/1.2em Poppins;
+        // color: rgba(166, 107, 56, 1) !important;
+        color: $color2 !important;
+        border-radius: 25px 25px 25px 25px;
+        min-width: 100px;
+    }
+    .nav-link:hover {
+        color: white !important;
+        background-color: $color2;
+        transition: background-color 300ms linear;
+    }
+    .fas {
+        font-size: 3.5rem;
+        color: white;
+    }
+}
+.background-image {
+    background: url("../assets/bg.png") center center / cover no-repeat;
+    background-color: $bgoverlaycolor;
+    height: 80vh;
+}
+.section-1 {
+    background-color: $bgoverlaycolor;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    // padding-left: 5%;
+    // padding-bottom: 1%;
+    .text-1 {
+        text-align: left;
+        font-weight: 700;
+        font-size: 2.4rem;
+        color: $color;
+    }
+    .text-2 {
+        width: 60%;
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $color;
+    }
+    .input-group {
+        box-shadow: 0px 0px 5px 1px black;
+        box-shadow: 0px 3px 6px #0000003d;
+        border: 0px;
+        // this controls the width of the entire input group
+        width: 90%;
+        margin-top: 12%;
+        .form-control {
+            border: none;
+            background-color: rgba(246, 240, 219, 1);
+            border-radius: 10px 0px 0px 10px;
+            font: normal normal 400 1.2rem/1em Poppins;
+        }
+    }
+    #button1 {
+        background-color: rgba(246, 240, 219, 1);
+        border: none;
+        border-left: 1px solid #707070;
+        border-radius: 0px;
+        font: normal normal 400 1rem/1em Poppins;
+        letter-spacing: 0.56px;
+        color: #707070;
+        width: 9em;
+    }
+    #button2 {
+        background-color: $color2;
+        border: none;
+        font: normal normal 400 0rem/1em Poppins;
+        width: 3rem;
+        border-radius: 0px 10px 10px 0px;
+        .button-text {
+            display: none;
+        }
+        #icon {
+            display: block;
+            width: 1.6rem;
+        }
+    }
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: $color4;
+
+    .text-1 {
+        display: flex;
+        text-align: left;
+        font: normal normal bold 2.2rem/2.8rem Poppins;
+        color: $color;
+        gap: 3%;
+        margin-bottom: 1.5em;
+        .rectangle {
+            border: 4px solid $color2;
+        }
+    }
+    .text-2 {
+        text-align: left;
+        font: normal normal 500 1.2rem/1.9rem Poppins;
+        margin-bottom: 4em;
+    }
+    .circles-1 {
+        align-self: flex-start;
+        margin: 4em 0;
+    }
+    .circles-2 {
+        align-self: flex-end;
+        margin: 4em 0;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        background-color: $color4;
+        align-items: center;
+    }
+    .card-1,
+    .card-2,
+    .card-3 {
+        margin: 6% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 28.2em;
+        height: 20.9em;
+        box-shadow: 0px 0px 10px #0000001a;
+        border-radius: 10px;
+        border: none;
+        background-color: $color3;
+        .card-title {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font: normal normal 600 1.4rem/27px Poppins;
+            align-self: center;
+            color: $color;
+            width: 80%;
+        }
+        .card-desc {
+            text-align: left;
+            font: normal normal 500 1.2rem/21px Poppins;
+            width: 60%;
+            align-self: center;
+            color: $color;
+        }
+        .circle {
+            border-radius: 50%;
+            background-color: $color4;
+            width: 7.5rem;
+            height: 7.5rem;
+            border: 1px solid $color;
+        }
+    }
+}
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $color3;
+    .row-1 {
+        text-align: center;
+        font: normal normal 600 2.2rem/40px Poppins;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        color: $color;
+    }
+    .row-2,
+    .row-5 {
+        text-align: left;
+        font: normal normal 600 1.6rem/40px Poppins;
+        margin-left: 6%;
+        color: $color;
+    }
+    .row-3,
+    .row-6 {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0;
+        .book {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 0;
+            gap: 0.5em;
+            align-items: center;
+            #book-image {
+                padding-top: 2em;
+                width: 80%;
+                align-self: center;
+                transition: 0.3s;
+            }
+            #book-image:hover,
+            #book-image:focus {
+                transform: translate(0, -10px);
+            }
+            #book-name {
+                text-align: left;
+                font: normal normal 600 1.2rem/1em Poppins;
+                letter-spacing: 0.48px;
+                color: $color;
+            }
+
+            #book-author {
+                text-align: left;
+                font: normal normal normal 1rem/1em Poppins;
+                color: $fontcolorauthorname;
+            }
+            #book-rating {
+                text-align: left;
+                font-size: 1em;
+                line-height: 1em;
+                .fa-star {
+                    color: $color2;
+                }
+            }
+            #book-review {
+                text-align: left;
+                font: normal normal normal 0.9rem/1em Poppins;
+                letter-spacing: 0.36px;
+                $fontcolorbookreview: rgba(11, 44, 79, 0.45);
+                color: $fontcolorbookreview;
+            }
+        }
+    }
+    .row-4,
+    .row-7 {
+        align-self: flex-end;
+        #morebutton {
+            font: normal normal 600 1.8em/1.2em Poppins;
+            color: $color;
+            border-color: $color;
+            border-width: 2px 2px 2px 2px;
+            border-radius: 0;
+            width: 8.5rem;
+            margin: 1em 0;
+        }
+        #morebutton:hover {
+            color: white !important;
+            background-color: $color;
+            transition: background-color 300ms linear;
+        }
+    }
+}
+.footer-container {
+    background-color: rgba(242, 242, 242, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    .row-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        .name {
+            text-align: left;
+            font: normal normal normal 2rem/1em Poppins;
+            letter-spacing: 0px;
+            color: $color;
+        }
+        .icons {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
+    }
+    .row-2 {
+        justify-self: flex-end;
+        font: normal normal 200 1rem/1em Poppins;
+        letter-spacing: 0.36px;
+        color: rgba(191, 173, 168, 1);
+    }
+}
+
+@media screen and (min-width: 885px) {
+    // above tablet sizes
+    .navbar {
+        .navbar-brand #brandtext {
+            display: block;
+        }
+    }
+    .background-image {
+        height: 100vh;
+    }
+    .section-1 {
+        height: 100vh;
+        padding-top: 10em;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        .text-1 {
+            margin-top: 15%;
+            font-size: 4.4rem;
+        }
+        .text-2 {
+            width: 28%;
+            font-size: 1.6rem;
+        }
+        .input-group {
+            // this controls the width of the entire input group
+            width: 55%;
+            margin: 8% 0 20% 0;
+            .form-control {
+                font: normal normal 500 1.4rem/25px Poppins;
+            }
+        }
+        #button1 {
+            font: normal normal 500 1.4rem/40px Poppins;
+            width: 11.5rem;
+        }
+        #button2 {
+            font: normal normal 600 1.8rem/40px Poppins;
+            width: 11.5rem;
+            .button-text {
+                display: block;
+                color: whitesmoke;
+            }
+            #icon {
+                display: none;
+            }
+        }
+    }
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 3%;
+        .text {
+            margin-top: 2%;
+            align-self: center;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .text-1 {
+            width: 30%;
+            font: normal normal bold 3.2rem/33px Poppins;
+            .rectangle {
+                border: 4px solid $color2;
+                height: 65px;
+            }
+        }
+        .text-2 {
+            width: 50%;
+            font: normal normal 500 1.6rem/25px Poppins;
+        }
+        .circles-1 {
+            margin: 4em 0;
+        }
+        .circles-2 {
+            margin: 4em 0;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card-1,
+        .card-2,
+        .card-3 {
+            margin: 6% 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 33.8em;
+            height: 25em;
+            .card-title {
+                font: normal normal 600 1.8rem/27px Poppins;
+                width: 80%;
+            }
+            .card-desc {
+                font: normal normal 500 1.4rem/21px Poppins;
+                width: 60%;
+            }
+            .circle {
+                width: 9rem;
+                height: 9rem;
+            }
+        }
+    }
+    .section-3 {
+        .row-1 {
+            font: normal normal 600 3.2rem/1em Poppins;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .row-2,
+        .row-5 {
+            font: normal normal 600 2.4rem/1em Poppins;
+            margin-left: 5;
+            margin-bottom: 1%;
+        }
+        .row-3,
+        .row-6 {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            .book {
+                width: 220px;
+                align-items: flex-start;
+                #book-image {
+                    width: 100%;
+                    padding-top: 0;
+                }
+                #book-name {
+                    font: normal normal 600 1.6rem/1em Poppins;
+                }
+                #book-author {
+                    font: normal normal 500 1.4rem/1em Poppins;
+                }
+                #book-rating {
+                    text-align: left;
+                    font-size: 1em;
+                }
+                #book-review {
+                    font: normal normal 500 1.2rem/1em Poppins;
+                }
+            }
+        }
+        .row-4,
+        .row-7 {
+            #morebutton {
+                font: normal normal 600 1.8rem/1em Poppins;
+                width: 11.4rem;
+            }
+        }
+    }
+    .footer-container {
+        background-color: $color4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 20vh;
+        .row-1 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            .name {
+                text-align: left;
+                font: normal normal normal 2.2rem/1em Poppins;
+            }
+            .icons {
+                display: flex;
+                flex-direction: row;
+                gap: 1.5em;
+            }
+        }
+        .row-2 {
+            #copyright {
+                justify-self: flex-end;
+                font: normal normal 200 1.4rem/1em Poppins;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 885px) {
+    //handles the squeezing of 4 books in one row in tablets
+    .text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 885px) {
+    // from tablet to largest mobile phone
+    .navbar {
+        .navbar-brand #brandtext {
+            display: block;
+        }
+    }
+    .background-image {
+        height: 100vh;
+    }
+    .section-1 {
+        height: 100vh;
+        padding-top: 10em;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        .text-1 {
+            margin-top: 10%;
+            font-size: 3.6rem;
+            // font-size: calc(24px + (44 - 24) * ((100vw - 375px) / (1200 - 375)));
+        }
+        .text-2 {
+            width: 55%;
+            font-size: 1.6rem;
+            // font-size: calc(12px + (14 - 12) * ((100vw - 375px) / (1200 - 375)));
+        }
+        .input-group {
+            // this controls the width of the entire input group
+            width: 75%;
+            margin: 8% 0 20% 0;
+            .form-control {
+                font: normal normal 500 1.4rem/25px Poppins;
+            }
+        }
+        #button1 {
+            font: normal normal 500 1.4rem/40px Poppins;
+            width: 60%;
+            height: 60px;
+        }
+        #button2 {
+            font: normal normal 600 1.8rem/40px Poppins;
+            width: 50%;
+            height: 60px;
+            .button-text {
+                display: block;
+            }
+            #icon {
+                display: none;
+            }
+        }
+    }
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .text {
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .text-1 {
+            width: 50%;
+            font: normal normal bold 2.6rem/33px Poppins;
+            align-self: center;
+            .rectangle {
+                border: 4px solid $color2;
+                height: 65px;
+            }
+        }
+        .text-2 {
+            align-self: center;
+            font: normal normal 500 1.6rem/25px Poppins;
+            width: 70%;
+        }
+        .circles-1 {
+            margin: 4em 0;
+        }
+        .circles-2 {
+            margin: 4em 0;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            background-color: $color4;
+            align-items: flex-start;
+            .card-2 {
+                align-self: flex-end;
+            }
+            .card-1,
+            .card-2,
+            .card-3 {
+                margin: 6% 5%;
+            }
+        }
+    }
+    .section-3 {
+        .row-1 {
+            font: normal normal 600 32px/40px Poppins;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .row-2,
+        .row-5 {
+            font: normal normal 600 24px/40px Poppins;
+            margin-left: 0;
+            margin-bottom: 1%;
+        }
+        .row-3,
+        .row-6 {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            :nth-child(4) {
+                display: none !important;
+            }
+            .book {
+                width: 220px;
+                align-items: center;
+                gap: 0;
+                :nth-child(4) {
+                    display: inline-block !important;
+                }
+                #book-image {
+                    width: 100%;
+                    padding-top: 0;
+                }
+                #book-name {
+                    font: normal normal 600 16px/1em Poppins;
+                }
+                #book-author {
+                    font: normal normal 500 14px/1em Poppins;
+                }
+                #book-rating {
+                    text-align: left;
+                    font-size: 1em;
+                    .fa-star {
+                        color: $color2;
+                    }
+                }
+                #book-review {
+                    font: normal normal 500 12px/1em Poppins;
+                }
+            }
+        }
+        .row-4,
+        .row-7 {
+            #morebutton {
+                font: normal normal 600 1.8rem/1em Poppins;
+                width: 11.4rem;
+            }
+        }
+    }
+    .footer-container {
+        background-color: $color4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 20vh;
+        .row-1 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin: 0 auto;
+            .name {
+                text-align: left;
+                font: normal normal normal 2.2rem/1em Poppins;
+                letter-spacing: 0px;
+                color: $color;
+            }
+            .icons {
+                display: flex;
+                flex-direction: row;
+                gap: 1.5em;
+            }
+        }
+        .row-2 {
+            #copyright {
+                justify-self: flex-end;
+                font: normal normal 200 1.4rem/1em Poppins;
+                letter-spacing: 0.36px;
+                color: rgba(191, 173, 168, 1);
+            }
+        }
+    }
+}
