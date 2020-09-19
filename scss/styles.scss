@@ -14,9 +14,9 @@ body {
     text-decoration: none;
 }
 
-* {
-    outline: 1px solid red;
-}
+// * {
+//     outline: 1px solid red;
+// }
 
 .fixed-top.scrolled {
     background-color: rgba(112, 112, 112, 0.9) !important;
@@ -94,6 +94,7 @@ body {
         border: 0px;
         // this controls the width of the entire input group
         width: 90%;
+        max-width: 800px;
         margin-top: 12%;
         .form-control {
             border: none;
@@ -566,6 +567,7 @@ body {
             height: 60px;
             .button-text {
                 display: block;
+                color: whitesmoke;
             }
             #icon {
                 display: none;

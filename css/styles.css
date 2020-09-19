@@ -8,10 +8,6 @@ body {
   text-decoration: none;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .fixed-top.scrolled {
   background-color: rgba(112, 112, 112, 0.9) !important;
   -webkit-transition: background-color 200ms linear;
@@ -117,6 +113,7 @@ body {
           box-shadow: 0px 3px 6px #0000003d;
   border: 0px;
   width: 90%;
+  max-width: 800px;
   margin-top: 12%;
 }
 
@@ -774,6 +771,7 @@ body {
   }
   .section-1 #button2 .button-text {
     display: block;
+    color: whitesmoke;
   }
   .section-1 #button2 #icon {
     display: none;
